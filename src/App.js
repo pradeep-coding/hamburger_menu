@@ -8,10 +8,10 @@ const App = () => (
   <>
     <Header />
     <Switch>
-      <Route exact path="hamburger_menu/" component={Home} />
-      <Route exact path="hamburger_menu/about" component={About} />
-      <Route exact path="hamburger_menu/not-found" component={NotFound} />
-      <Redirect to="hamburger_menu/not-found" />
+      <Route exact path="/hamburger_menu" component={Home} />
+      <Route exact path="/hamburger_menu/about" component={About} />
+      <Route exact path="/hamburger_menu/not-found" component={NotFound} />
+      <Redirect to="/hamburger_menu/not-found" />
     </Switch>
   </>
 )

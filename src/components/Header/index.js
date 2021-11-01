@@ -19,7 +19,7 @@ import './index.css'
 const Header = () => (
   <NavBarContainer>
     <NavBar>
-      <Link to="hamburger_menu/" className="nav-link">
+      <Link to="/hamburger_menu" className="nav-link">
         <WebsiteLogo
           src="https://assets.ccbp.in/frontend/react-js/hamburger-menu-website-logo.png"
           alt="website logo"
@@ -51,7 +51,7 @@ const Header = () => (
               </button>
               <ModalItems>
                 <Link
-                  to="hamburger_menu/"
+                  to="/hamburger_menu"
                   className="nav-link"
                   onClick={() => close()}
                 >
@@ -61,7 +61,7 @@ const Header = () => (
                   </ModalItem>
                 </Link>
                 <Link
-                  to="hamburger_menu/about"
+                  to="/hamburger_menu/about"
                   className="nav-link"
                   onClick={() => close()}
                 >
