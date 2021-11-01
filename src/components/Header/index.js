@@ -19,7 +19,7 @@ import './index.css'
 const Header = () => (
   <NavBarContainer>
     <NavBar>
-      <Link to="/" className="nav-link">
+      <Link to="hamburger_menu/" className="nav-link">
         <WebsiteLogo
           src="https://assets.ccbp.in/frontend/react-js/hamburger-menu-website-logo.png"
           alt="website logo"
@@ -50,13 +50,21 @@ const Header = () => (
                 <IoMdClose className="nav-icon" />
               </button>
               <ModalItems>
-                <Link to="/" className="nav-link" onClick={() => close()}>
+                <Link
+                  to="hamburger_menu/"
+                  className="nav-link"
+                  onClick={() => close()}
+                >
                   <ModalItem>
                     <AiFillHome className="nav-icon" />
                     <NavPathName>Home</NavPathName>
                   </ModalItem>
                 </Link>
-                <Link to="/about" className="nav-link" onClick={() => close()}>
+                <Link
+                  to="hamburger_menu/about"
+                  className="nav-link"
+                  onClick={() => close()}
+                >
                   <ModalItem>
                     <BsInfoCircleFill className="nav-icon" />
                     <NavPathName>About</NavPathName>
